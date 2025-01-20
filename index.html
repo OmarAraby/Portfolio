@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap CSS (Local) -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome (Local) -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/swiper/swiper-bundle.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Add Swiper CSS -->
+  </head>
+  <body>
+    <!-- Header with Bootstrap Navbar -->
+    <header id="header" class="header fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <h1 class="sitename">{/ Omar Araby /};</h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="nav-item ms-3">
+              <button id="theme-toggle" class="btn btn-link nav-link">
+                <i class="bi bi-moon-fill" id="theme-icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
+        <div class="container">
+          <div class="row min-vh-100 align-items-center">
+            <!-- Text Content Column -->
+            <div class="col-lg-6 py-5">
+              <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="display-4 fw-bold mb-3">Omar Araby</h2>
+                <p class="fs-4 mb-4">
+                  I'm
+                  <span
+                    class="typed"
+                    data-typed-items="Software Engineering, Developer, Freelancer"
+                  >
+                    Freelancer
+                  </span>
+                </p>
+                <div class="social-links">
+                  <a href="#" class="me-3"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                  <a
+                    href="https://github.com/OmarAraby"
+                    target="_blank"
+                    class="me-3"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/omar-araby"
+                    target="_blank"
+                    class="me-3"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- Image Column -->
+            <div class="col-lg-6 position-relative py-5">
+              <img
+                src="images/cover.png"
+                alt="Hero illustration"
+                class="img-fluid"
+                data-aos="fade-in"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <!-- Section Title -->
+        <div class="container section-title text-center" data-aos="fade-up">
+          <h1 class="mb-4">About</h1>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-between align-items-center">
+            <div class="col-lg-5 col-md-6 profile-img">
+              <img
+                src="images/about.png"
+                class="img-fluid rounded shadow-sm"
+                alt="Profile Image"
+              />
+            </div>
+            <div class="col-lg-6 col-md-6 content">
+              <h3 class="mb-4">
+                I'm a UX/UI designer based in Austin who loves clean, simple &
+                unique design. I also enjoy crafting brand identities, icons, &
+                illustration work.
+              </h3>
+              <p class="lead mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <ul class="list-unstyled">
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-check2-all me-3"></i>
+                  <span
+                    >Ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</span
+                  >
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-check2-all me-3"></i>
+                  <span
+                    >Duis aute irure dolor in reprehenderit in voluptate
+                    velit.</span
+                  >
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-check2-all me-3"></i>
+                  <span
+                    >Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate trideta
+                    storacalaperda mastiro dolore eu fugiat nulla
+                    pariatur.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Education Section -->
+      <!-- Education Section -->
+      <section id="education" class="education section">
+        <!-- Section Title -->
+        <div class="container section-title text-center" data-aos="fade-up">
+          <h1 class="mb-4">Education</h1>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <!-- Education 1 -->
+            <div class="col-lg-6 col-md-6 education-item">
+              <div class="education-card">
+                <h3>Bachelor Degree in Computer Science and Information</h3>
+                <h4>Suez University</h4>
+                <p class="date">08/2017 – 06/2021</p>
+                <p>GPA: 3.17</p>
+              </div>
+            </div>
+            <!-- End Education 1 -->
+
+            <!-- Education 2 -->
+            <div class="col-lg-6 col-md-6 education-item">
+              <div class="education-card">
+                <h3>Professional Development & BI-Infused CRM Trainee</h3>
+                <h4>Information Technology Institute (ITI)</h4>
+                <p class="date">10/2024 – Present</p>
+                <!-- <p>
+            Intensive training program focusing on:
+            <ul>
+              <li>Software Development Fundamentals</li>
+              <li>Front-End & MEAN Stack Development</li>
+              <li>.NET Core & Web Application Development</li>
+              <li>Business Intelligence (Power BI, SQL Server)</li>
+              <li>Microsoft Dynamics CRM</li>
+              <li>Soft Skills (Communication, Teamwork, Leadership)</li>
+            </ul>
+          </p> -->
+              </div>
+            </div>
+            <!-- End Education 2 -->
+
+            <!-- Education 3 -->
+            <div class="col-lg-6 col-md-6 education-item">
+              <div class="education-card">
+                <h3>DEPI Scholarship - React Developer Track</h3>
+                <h4>Ministry of Communications and Information Technology</h4>
+                <p class="date">05/2024 – 10/2024</p>
+              </div>
+            </div>
+            <!-- End Education 3 -->
+          </div>
+        </div>
+      </section>
+      <!-- /Education Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <div class="container section-title text-center" data-aos="fade-up">
+          <h2 class="mb-4">Services</h2>
+        </div>
+
+        <div class="container">
+          <div class="row gy-5 gx-4">
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <div>
+                <h4 class="title">Lorem Ipsum</h4>
+                <p class="description">
+                  Voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi sint occaecati cupiditate non provident
+                </p>
+                <a href="#services" class="readmore">
+                  <span>Learn More</span><i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-card-checklist"></i>
+              </div>
+              <div>
+                <h4 class="title">Dolor Sitema</h4>
+                <p class="description">
+                  Minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat tarad limino ata
+                </p>
+                <a href="#services" class="readmore"
+                  ><span>Learn More</span><i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-bar-chart"></i>
+              </div>
+              <div>
+                <h4 class="title">Sed ut perspiciatis</h4>
+                <p class="description">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur
+                </p>
+                <a href="#services" class="readmore"
+                  ><span>Learn More</span><i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-binoculars"></i>
+              </div>
+              <div>
+                <h4 class="title">Magni Dolores</h4>
+                <p class="description">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum
+                </p>
+                <a href="#services" class="readmore"
+                  ><span>Learn More</span><i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-brightness-high"></i>
+              </div>
+              <div>
+                <h4 class="title">Nemo Enim</h4>
+                <p class="description">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque
+                </p>
+                <a href="#services" class="readmore"
+                  ><span>Learn More</span><i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <div>
+                <h4 class="title">Eiusmod Tempor</h4>
+                <p class="description">
+                  Et harum quidem rerum facilis est et expedita distinctio. Nam
+                  libero tempore, cum soluta nobis est eligendi
+                </p>
+                <a href="#services" class="readmore">
+                  <span>Learn More</span><i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Services Section -->
+      <!-- Projects Section -->
+      <section id="projects" class="projects section">
+        <!-- Section Title -->
+        <div class="container section-title text-center" data-aos="fade-up">
+          <h1 class="mb-4">Projects</h1>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <!-- Project 1 -->
+            <div class="col-lg-4 col-md-6 project-item">
+              <div class="project-card">
+                <div class="project-img">
+                  <img
+                    src="images/covido.png"
+                    alt="Covid0 Project"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3>Covido</h3>
+                  <p>
+                    A Django web application to track and forecast COVID-19
+                    cases. It uses data from reliable sources to predict future
+                    trends and helps users find nearby hospitals.
+                  </p>
+                  <ul class="tech-list">
+                    <li>Django</li>
+                    <li>HTML/CSS/JS</li>
+                    <li>ML/DL</li>
+                  </ul>
+
+                  <a
+                    href="https://github.com/OmarAraby/Covido"
+                    class="link-custom"
+                  >
+                    View Project <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Project 1 -->
+
+            <!-- Project 2 -->
+            <div class="col-lg-4 col-md-6 project-item">
+              <div class="project-card">
+                <div class="project-img">
+                  <img
+                    src="images/task.png"
+                    alt="Task Management System"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3>Task Management System</h3>
+                  <p>
+                    A web-based application for managing tasks with real-time
+                    notifications, user roles, and a dashboard for task
+                    statistics.
+                  </p>
+                  <ul class="tech-list">
+                    <li>ReactJs</li>
+                    <li>Node Js</li>
+
+                    <li>Socket.IO</li>
+                    <li>JWT Authentication</li>
+                  </ul>
+                  <a
+                    href="https://github.com/mohatem99/TaskFront_/tree/FinalMerge"
+                    target="_blank"
+                    class="link-custom"
+                    >View Project<i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Project 2 -->
+
+            <!-- Project 3 -->
+            <div class="col-lg-4 col-md-6 project-item">
+              <div class="project-card">
+                <div class="project-img">
+                  <img
+                    src="images/job-board.png"
+                    alt="Job Board"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3>Job Board</h3>
+                  <p>
+                    A Django-based job board where users can post and search for
+                    jobs. Includes a user dashboard for managing job
+                    applications.
+                  </p>
+                  <ul class="tech-list">
+                    <li>Django</li>
+                    <li>HTML/CSS/JS</li>
+                    <li>User Dashboard</li>
+                  </ul>
+                  <a
+                    href="https://github.com/OmarAraby/Django-Job-Board"
+                    target="_blank"
+                    class="link-custom"
+                    >View Project<i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Project 3 -->
+          </div>
+        </div>
+      </section>
+      <!-- /Projects Section -->
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials section light-background">
+        <!-- Section Title -->
+        <div class="container section-title text-center" data-aos="fade-up">
+          <h1 class="mb-4">Testimonials</h1>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="images/image.png" class="testimonial-img" alt="" />
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Proin iaculis purus consequat sem cure digni ssim donec
+                      porttitora entum suscipit rhoncus. Accusantium quam,
+                      ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                      risus at semper.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="images/image.png" class="testimonial-img" alt="" />
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Export tempor illum tamen malis malis eram quae irure
+                      esse labore quem cillum quid cillum eram malis quorum
+                      velit fore eram velit sunt aliqua noster fugiat irure amet
+                      legam anim culpa.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="images/image.png" class="testimonial-img" alt="" />
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Enim nisi quem export duis labore cillum quae magna enim
+                      sint quorum nulla quem veniam duis minim tempor labore
+                      quem eram duis noster aute amet eram fore quis sint
+                      minim.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="images/image.png" class="testimonial-img" alt="" />
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Fugiat enim eram quae cillum dolore dolor amet nulla
+                      culpa multos export minim fugiat minim velit minim dolor
+                      enim duis veniam ipsum anim magna sunt elit fore quem
+                      dolore labore illum veniam.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="images/image.png" class="testimonial-img" alt="" />
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Quis quorum aliqua sint quem legam fore sunt eram irure
+                      aliqua veniam tempor noster veniam enim culpa labore duis
+                      sunt culpa nulla illum cillum fugiat legam esse veniam
+                      culpa fore nisi cillum quid.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- /Testimonials Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title text-center" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-5">
+              <div class="col-lg-4">
+                <div class="info-item d-flex align-items-center">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p>Suez, Egypt</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <div class="col-lg-4">
+                <div class="info-item d-flex align-items-center">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Call<br /></h3>
+                    <p>+201128285281</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <div class="col-lg-4">
+                <div class="info-item d-flex align-items-center">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email</h3>
+                    <p>omar_araby7@outlook.com</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Info Item -->
+            </div>
+          </div>
+
+          <form
+            action=""
+            method="post"
+            class="email-form"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required=""
+                />
+              </div>
+
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Your Email"
+                  required=""
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  placeholder="Subject"
+                  required=""
+                />
+              </div>
+
+              <div class="col-md-12">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="6"
+                  placeholder="Message"
+                  required=""
+                ></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <!-- <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Your message has been sent. Thank you!
+                </div> -->
+
+                <button type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+          <!-- End Contact Form -->
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <!-- footer section -->
+    <footer id="footer" class="footer light-background">
+      <div class="container">
+        <h4 class="sitename">{/Omar Araby/};</h4>
+        <p>
+          Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni
+          eligendi fuga maxime saepe commodi placeat.
+        </p>
+        <div class="social-links d-flex justify-content-center">
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/omar-araby" target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://github.com/OmarAraby" target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <span>Copyright</span>
+            <strong class="px-1 sitename">Omar Araby</strong>
+            <span>All Rights Reserved</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Bootstrap JS (Local) -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Add Swiper JS -->
+    <script src="node_modules/bootstrap/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+  </body>
+</html>
