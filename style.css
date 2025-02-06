@@ -573,6 +573,9 @@ about  Section
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+#testimonials{
+  display:none;
+}
 .testimonials .section-header {
   margin-bottom: 40px;
   padding: 10px;
